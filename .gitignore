@@ -1,0 +1,16 @@
+# Local environment / secrets — never commit these
+.env
+
+# Docker persistent-data bind mounts (runtime data, not app code)
+docker-data/
+
+# Content/credentials if ever present outside the Docker volume (e.g.
+# during local `php -S` development directly on this checkout)
+/data/admin-credentials.json
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/

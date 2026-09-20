@@ -1,0 +1,43 @@
+# Nurture Impact — root .htaccess
+# Requires Apache mod_rewrite, which is enabled by default on Blacknight
+# shared hosting. If pretty URLs below don't work, confirm mod_rewrite
+# is on for the account (Blacknight support can confirm/enable this).
+
+# Serve the dynamic homepage by default (index.html is kept only as a
+# redirect for old bookmarks/links — see index.html itself).
+DirectoryIndex index.php index.html
+
+RewriteEngine On
+
+# Pretty article URLs: /insights/example-slug -> article.php?slug=example-slug
+RewriteRule ^insights/([a-zA-Z0-9\-]+)/?$ article.php?slug=$1 [L,QSA]
+
+# Pretty project URLs: /projects/example-slug -> project.php?slug=example-slug
+RewriteRule ^projects/([a-zA-Z0-9\-]+)/?$ project.php?slug=$1 [L,QSA]
+
+# Never allow the raw JSON content files to be downloaded directly
+<IfModule mod_authz_core.c>
+  <Files "*.json">
+    Require all denied
+  </Files>
+</IfModule>
+<IfModule !mod_authz_core.c>
+  <Files "*.json">
+    Order allow,deny
+    Deny from all
+  </Files>
+</IfModule>
+
+# Sensible default security headers (safe to remove if they conflict with anything)
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Don't let Apache list directory contents (e.g. /data/, /assets/uploads/)
+# if a directory has no index file — defense in depth alongside the
+# per-directory .htaccess files. If this line causes a 500 error on your
+# host (some restrictive shared-hosting configs disallow Options overrides
+# in .htaccess), simply delete this line — the per-directory Deny rules
+# below still protect the sensitive folders either way.
+Options -Indexes

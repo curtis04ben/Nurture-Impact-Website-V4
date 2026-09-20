@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "example-community-development-workshop",
+    "title": "Community Development Workshop (Example)",
+    "date": "2026-01-15",
+    "organisation": "Example Community Group",
+    "project_type": "Training",
+    "featured_image": "assets/community_training.png",
+    "gallery": ["assets/growth_stages.jpg", "assets/impact.png"],
+    "summary": "An example project entry showing how a completed workshop will be described once real project content is published.",
+    "body": "This is placeholder text demonstrating the layout used for a project write-up.\n\nA real entry would describe the organisation Nurture Impact worked with, what the session covered, and the practical outcomes for participants.\n\nUse the admin area to edit this entry or add new projects as they are completed.",
+    "role": "Nurture Impact designed and delivered the training session.",
+    "outcomes": "Placeholder outcomes text — replace with real results once available.",
+    "published": false
+  }
+]

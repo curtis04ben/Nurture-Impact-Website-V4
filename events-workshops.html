@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700|Great+Vibes:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <title>Events &amp; Workshops | Nurture Impact</title>
+  <meta name="description" content="Upcoming and past workshops, masterclasses and events from Nurture Impact, supporting organisations across the Youth & Community Development sector.">
+  <link rel="canonical" href="https://www.nurtureimpact.ie/events-workshops.html">
+  <meta property="og:title" content="Events & Workshops | Nurture Impact">
+  <meta property="og:description" content="Upcoming and past workshops, masterclasses and events from Nurture Impact.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/favicon-180.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!--Beginning of navigation section-->
+  <div class="nav-bar">
+      <div class="nav-bar__left">
+          <a href="index.php" class="nav-bar-brand">
+              <img src="assets/main_img.png" alt="Nurture Impact Logo" class="nav-bar-brand__img">
+          </a>
+          <div class="nav-bar__title">
+              <h1>Nurture Impact</h1>
+          </div>
+      </div>
+      <ul class="nav-bar__links">
+        <li><a href="index.php">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.php">Projects</a></li>
+        <li><a href="insights.php">Insights</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#intro" class="skip-to-main">skip to main content</a>
+  </div>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" aria-hidden="true">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="index.php" class="navigation__link">HOME</a></li>
+          <li class="navigation__item"><a href="services.html" class="navigation__link">SERVICES</a></li>
+          <li class="navigation__item"><a href="projects.php" class="navigation__link">PROJECTS</a></li>
+          <li class="navigation__item"><a href="insights.php" class="navigation__link">INSIGHTS</a></li>
+          <li class="navigation__item"><a href="about.html" class="navigation__link">ABOUT</a></li>
+          <li class="navigation__item"><a href="#contact" class="navigation__link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--End of navigation section-->
+
+  <header class="page-intro">
+    <h1>Events &amp; Workshops</h1>
+    <p>Upcoming and recent workshops, masterclasses and community sessions delivered by Nurture Impact.</p>
+  </header>
+
+  <main>
+    <section class="events" id="intro">
+      <div class="events__container">
+        <h2 class="events__heading">Upcoming Sessions</h2>
+        <div class="events__cards">
+          <!-- Example / placeholder event card. Once the content system (see /admin) is in
+               use, upcoming events can be published here without editing this file. -->
+          <div class="events__card">
+            <div class="events__card-image">
+              <img src="assets/governance.png" alt="Board members taking part in a governance session">
+            </div>
+            <div class="events__card-content">
+              <span class="event-card__date">Date to be announced</span>
+              <h3>Governance Essentials Workshop</h3>
+              <p>An example placeholder listing — real upcoming events will be published here once confirmed, without needing to edit this page directly.</p>
+              <a href="#contact" class="events__btn">Register Interest</a>
+            </div>
+          </div>
+
+          <div class="events__card">
+            <div class="events__card-image">
+              <img src="assets/funding_app.png" alt="Participant filling out a funding application">
+            </div>
+            <div class="events__card-content">
+              <span class="event-card__date">Date to be announced</span>
+              <h3>Funding &amp; Grant Applications Masterclass</h3>
+              <p>An example placeholder listing for a future Pobal funding applications masterclass session.</p>
+              <a href="#contact" class="events__btn">Register Interest</a>
+            </div>
+          </div>
+
+          <div class="events__card">
+            <div class="events__card-image">
+              <img src="assets/workshop_1.jpg" alt="Team taking part in a board development session">
+            </div>
+            <div class="events__card-content">
+              <span class="event-card__date">Date to be announced</span>
+              <h3>Board Development Session</h3>
+              <p>An example placeholder listing illustrating the layout used for bespoke board and team development sessions.</p>
+              <a href="#contact" class="events__btn">Register Interest</a>
+            </div>
+          </div>
+        </div>
+        <p class="content-placeholder-note" style="color:rgba(255,255,255,0.6);">Sessions shown are illustrative placeholders. Get in touch to discuss tailored training and workshop dates for your organisation.</p>
+      </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+      <div class="cta__wrapper">
+        <h2 class="cta__headline">Looking for Tailored Training?</h2>
+        <p class="cta__text">Nurture Impact can deliver bespoke workshops and training programmes for your organisation, team or board.</p>
+        <div class="cta__buttons">
+          <a href="services.html#training" class="why__cta-link">See Training &amp; Workshops</a>
+        </div>
+        <p class="cta__or">or</p>
+        <a href="#contact" class="cta__contact-link">Get in touch directly</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="contact__heading" tabindex="0">Interested in a Workshop?</h2>
+      <p class="contact__sub">Tell us about your organisation and training needs</p>
+      <form id="contact-form" method="post" action="contact-handler.php">
+        <input type="hidden" name="contact_number">
+          <input type="hidden" name="source_page" value="Events & Workshops page">
+        <input type="text" placeholder="Enter your name" id="name" name="from_name" aria-label="Enter your name" required>
+        <input type="email" placeholder="Enter your email" id="email" name="reply_to" aria-label="Enter your email" required>
+        <input type="text" placeholder="Organisation name (optional)" id="organisation" name="organisation" aria-label="Enter your organisation name">
+        <textarea cols="30" rows="10" placeholder="Tell us about the training or workshop you're interested in" name="message" id="Message" aria-label="Enter your message" required></textarea>
+        <input type="submit" class="btn" value="SEND MESSAGE">
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer class="footer footer--expanded">
+    <div class="footer__content">
+      <div class="footer__brand">
+        <h3>Nurture Impact</h3>
+        <p>Youth &amp; Community Development Consultancy &bull; Training &amp; Governance &bull; Funding &amp; Grant Applications</p>
+      </div>
+      <div class="footer__nav">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.php">Projects</a></li>
+          <li><a href="insights.php">Insights</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer__services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="governance.html">Governance &amp; Board Development</a></li>
+          <li><a href="grant-applications.html">Funding &amp; Grant Applications</a></li>
+          <li><a href="services.html#training">Training &amp; Workshops</a></li>
+          <li><a href="events-workshops.html">Events &amp; Workshops</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4 style="color:#fff;opacity:.9;margin:0 0 10px;font-size:1rem;">Contact</h4>
+        <p><a href="mailto:info@nurtureimpact.ie">info@nurtureimpact.ie</a></p>
+        <p><a href="https://www.nurtureimpact.ie" target="_blank">www.nurtureimpact.ie</a></p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/curtisalan?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener" aria-label="Nurture Impact on LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__text">&copy; Nurture Impact 2026</p>
+  </footer>
+  <script src="assets/js/contact-form.js" defer></script>
+</body>
+</html>
